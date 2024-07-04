@@ -35,7 +35,8 @@ export default function Tooltip({
     
     const iconStyles = {
         backgroundColor: iconColor,
-        mask: `url(${icon})`
+        WebKitMaskImage: `url(${icon})`,
+        maskImage: `url(${icon})`
     }
 
     const titleStyles = {
