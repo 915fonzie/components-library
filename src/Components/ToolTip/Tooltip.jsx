@@ -35,8 +35,8 @@ export default function Tooltip({
     
     const iconStyles = {
         backgroundColor: iconColor,
-        WebKitMaskImage: `url(${icon})`,
-        maskImage: `url(${icon})`
+        maskImage: `url(${icon})`,
+        WebKitMask: `url(${icon})`
     }
 
     const titleStyles = {
@@ -51,11 +51,8 @@ export default function Tooltip({
         backgroundColor
     }
 
-    useEffectOnUpdate(() => wrapperRef.current.style.setProperty('--border-top-color', backgroundColor), [reveal])
-
     // in order to add background to psuedo element, I added the color to root and pulled it into the tooltip::before element
-    // wrapperRef.current.style.setProperty('--border-top-color', backgroundColor)
-
+    useEffectOnUpdate(() => wrapperRef.current.style.setProperty('--border-top-color', backgroundColor), [reveal])
 
     return (
         <div className={tooltipStyles.wrapper} {...rest} ref={wrapperRef}>
