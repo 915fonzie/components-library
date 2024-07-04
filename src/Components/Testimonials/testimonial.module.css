@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.imgContainer,
+.noImgContainer {
+    font-family: Inter, sans-sarif;
+    position: relative;
+    display: flex;
+    height: 400px;
+    z-index: 1;
+}
+
+.imgContainer {
+    background-color: #2545B8;
+    color: white;
+}
+
+.noImgContainer {
+    background-color: white;
+    box-shadow: 0 0 15px lightgray;
+    text-align: center;
+}
+
+.profileImg {
+    position: absolute;
+    top: -32px;
+    left: 4.5em;
+    height: 464px;
+    width: 384px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.253);
+}
+
+.logo {
+    margin-bottom: 2em;
+}
+
+.quoteImg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1em;
+}
+
+.imgContainer .text {
+    margin: auto auto auto 31em;
+}
+
+.noImgContainer .text {
+    margin: auto;
+    width: 70%;
+    z-index: 3;
+}
+
+.name,
+.jobInfo {
+    margin: 0;
+}
+
+.name {
+    font-size: 1rem;
+    margin-top: 1.5em;
+}
+
+.jobInfo {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.quote {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.imgContainer .quote {
+    margin-right: 4em;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 999px) {
+    .quoteImg {
+        margin-bottom: 0.5em;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+
+    .imgContainer .quote {
+        margin-right: 2em;
+    }
+
+    .name {
+        font-size: 0.9rem;
+        margin-top: 1em;
+    }
+    .jobInfo {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .imgContainer,
+    .noImgContainer {
+        height: 100%;
+    }
+
+    .profileImg {
+        top: -103px;
+        left: 50%;
+        margin-left: -188px;
+        width: 376px;
+        height: 206px;
+        object-fit: cover;
+        object-position: 0% 33%;
+    }
+    .imgContainer .text {
+        margin-left: 1em;
+        margin-top: 8em;
+        margin-bottom: 3em;
+    }
+
+    .noImgContainer .text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 2em auto;
+    }
+
+    .logo {
+        height: 32px;
+        margin-bottom: 2em;
+    }
+
+    .dots {
+        width: 202px;
+        height: 135px;
+        object-fit: cover;
+        object-position: 0% 100%;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .profileImg {
+        width: 250px;
+        margin-left: -125px;
+    }
+
+    .noImgContainer .text {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .noImgContainer .quote,
+    .noImgContainer .jobInfo,
+    .noImgContainer .name {
+        margin:  0 0.5em;
+    }
+
+    .noImgContainer .name {
+        margin-top: 1em;
+    }
+
+
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.card {
+    position: relative;
+    width: 384px;
+    height: 208px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgb(228, 227, 227);
+    font-family: Inter, sans-sarif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover,
+.card:focus {
+    box-shadow: 0 0 15px rgb(196, 196, 196);
+}
+
+.iconStyle {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    top: -24px;
+    left: 50%;
+    margin-left: -24px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.iconImg {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.title,
+.description {
+    padding: 0 2em;
+}
+
+.title {
+    color: #111827;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin: 3em 0 0 0;
+}
+
+.description {
+    color: #6B7280;
+    font-size: 1rem;
+    margin-top: 1.5em;
+}
