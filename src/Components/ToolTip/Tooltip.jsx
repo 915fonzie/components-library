@@ -34,9 +34,9 @@ export default function Tooltip({
         lightPink && "#FFF3FC" || darkGreen && "#47AA5D" || lightGreen && "#E7FFF3" || "#C7C7C7")
     
     const iconStyles = {
-        backgroundColor: iconColor,
         maskImage: `url(${icon})`,
-        WebKitMask: `url(${icon})`
+        WebKitMask: `url(${icon})`,
+        backgroundColor: iconColor,
     }
 
     const titleStyles = {

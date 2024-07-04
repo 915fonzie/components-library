@@ -11,9 +11,9 @@ export default function TooltipCloseButton({ handleReveal, color }) {
     }, [])
     
     const closeStyles = {
-        backgroundColor: color,
         maskImage: `url(${closeIcon})`,
-        WebMaskImage: `url(${closeIcon})`
+        WebMaskImage: `url(${closeIcon})`,
+        backgroundColor: color,
     }
 
     return (
