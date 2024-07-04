@@ -12,7 +12,7 @@ export default function TooltipCloseButton({ handleReveal, color }) {
     
     const closeStyles = {
         backgroundColor: color,
-        mask: `url(${closeIcon})`
+        maskImage: `url(${closeIcon})`,
     }
 
     return (
