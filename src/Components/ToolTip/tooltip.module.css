@@ -13,6 +13,7 @@
     left: 50%;
     top: -140px;
     transform: translateX(-15%);
+    --webkit-transform: translateX(-15%);
     padding: 6px;
     color: white;
     font-family: sans-serif;
@@ -48,6 +49,7 @@
     width: 24px;
     height: 24px;
     margin-right: 1em;
+    /* mask: url("../../assets/archive.svg"); */
   }
 
   .title {
